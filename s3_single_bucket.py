@@ -1,9 +1,8 @@
-# Download single bucket and files with same structure
+
 import sys
 
 directory_path = sys.argv[1]
 bucket_name = sys.argv[2]
-
 
 def s3_single(directory_path, bucket_name):
     import boto3
