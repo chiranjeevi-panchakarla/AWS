@@ -18,7 +18,7 @@ def s3_single(directory_path, bucket_name):
             print(bucket.name)
             os.chdir(bucket.name)
             if os.path.isfile(obje.key):
-                print(bucket.name, '-->', obje.key, "avaialble")
+                print(bucket.name, '-->', obje.key, "available")
             else:
                 s3.Bucket(bucket.name).download_file(obje.key, obje.key)
                 print(obje.key, '-->', bucket.name)
@@ -29,7 +29,7 @@ def s3_single(directory_path, bucket_name):
             os.mkdir(bucket.name)
             os.chdir(bucket.name)
             if os.path.isfile(obje.key):
-                print(bucket.name, '-->', obje.key, "avaialble")
+                print(bucket.name, '-->', obje.key, "available")
             else:
                 s3.Bucket(bucket.name).download_file(obje.key, obje.key)
                 print(obje.key, '-->', bucket.name)
